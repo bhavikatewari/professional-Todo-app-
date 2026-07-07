@@ -1,0 +1,247 @@
+/* ---------- Google Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ---------- Body ---------- */
+
+body{
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+/* ---------- Container ---------- */
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:#1d1d1d;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,255,255,.08);
+}
+
+/* ---------- Heading ---------- */
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+header h1{
+    font-size:32px;
+    margin-bottom:10px;
+    color:#fff;
+}
+
+.developer-info h2{
+    color:#d9d9d9;
+    margin-bottom:8px;
+}
+
+.developer-info p{
+    color:#aaa;
+    font-size:15px;
+}
+
+/* ---------- Input ---------- */
+
+.input-section{
+    display:flex;
+    gap:10px;
+    margin:25px 0;
+}
+
+.input-section input{
+    flex:1;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#2e2e2e;
+    color:white;
+    font-size:16px;
+}
+
+.input-section input::placeholder{
+    color:#888;
+}
+
+#addBtn{
+    padding:14px 22px;
+    border:none;
+    border-radius:10px;
+    background:#5c5c5c;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#addBtn:hover{
+    background:#7a7a7a;
+}
+
+/* ---------- Filter ---------- */
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.filter{
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    background:#333;
+    color:white;
+    transition:.3s;
+}
+
+.filter:hover{
+    background:#555;
+}
+
+.filter.active{
+    background:#888;
+}
+
+/* ---------- Counter ---------- */
+
+.task-counter{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    color:#bbb;
+}
+
+/* ---------- List ---------- */
+
+#taskList{
+    list-style:none;
+}
+
+#taskList li{
+    background:#2d2d2d;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:12px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    transition:.3s;
+}
+
+#taskList li:hover{
+    transform:scale(1.02);
+}
+
+/* ---------- Completed ---------- */
+
+.completed span{
+    text-decoration:line-through;
+    color:#888;
+}
+
+/* ---------- Buttons ---------- */
+
+.actions button{
+    margin-left:6px;
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.complete{
+    background:#666;
+    color:white;
+}
+
+.complete:hover{
+    background:#808080;
+}
+
+.edit{
+    background:#999;
+    color:black;
+}
+
+.edit:hover{
+    background:#bfbfbf;
+}
+
+.delete{
+    background:#222;
+    color:white;
+}
+
+.delete:hover{
+    background:#444;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    margin-top:30px;
+    text-align:center;
+    color:#999;
+    font-size:14px;
+}
+
+/* ---------- Watermark ---------- */
+
+.watermark{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    color:rgba(255,255,255,.12);
+    font-size:14px;
+    font-weight:bold;
+    pointer-events:none;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:650px){
+
+.input-section{
+    flex-direction:column;
+}
+
+#addBtn{
+    width:100%;
+}
+
+.filters{
+    flex-wrap:wrap;
+}
+
+.task-counter{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+}
+
+header h1{
+    font-size:26px;
+}
+
+}
