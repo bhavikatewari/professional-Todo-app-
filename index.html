@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Professional To-Do List Portfolio by Bhavika Tewari">
+    <meta name="keywords" content="To-Do List, Portfolio, HTML, CSS, JavaScript, Web Development">
+    <meta name="author" content="Bhavika Tewari">
+
+    <title>Bhavika Tewari | Professional To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Portfolio Header -->
+    <header>
+        <h1>Professional To-Do List</h1>
+
+        <div class="developer-info">
+            <h2>Bhavika Tewari</h2>
+            <p>BCA First Year</p>
+            <p>Birla Institute of Applied Sciences</p>
+            <p>Aspiring Web Developer</p>
+        </div>
+    </header>
+
+    <!-- Input Section -->
+    <section class="input-section">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a new task..."
+            aria-label="Task Input"
+        >
+
+        <button id="addBtn">
+            Add Task
+        </button>
+
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="filters">
+
+        <button class="filter active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter" data-filter="active">
+            Active
+        </button>
+
+        <button class="filter" data-filter="completed">
+            Completed
+        </button>
+
+    </section>
+
+    <!-- Task Counter -->
+    <section class="task-counter">
+
+        <span id="totalTasks">
+            Total: 0
+        </span>
+
+        <span id="completedTasks">
+            Completed: 0
+        </span>
+
+    </section>
+
+    <!-- Task List -->
+    <main>
+
+        <ul id="taskList">
+
+        </ul>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        © 2026 Bhavika Tewari
+
+        <br>
+
+        Professional Portfolio Project
+
+    </footer>
+
+</div>
+
+<!-- Watermark -->
+
+<div class="watermark">
+    Portfolio by Bhavika Tewari
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
